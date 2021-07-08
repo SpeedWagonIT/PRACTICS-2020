@@ -40,12 +40,12 @@ void SetOfStack::Push() {
 		stack++;
 		vector <string> temp;
 		table.push_back(temp);
-		table[table.size() - 1].push_back("Tarelka " + to_string(plate));
+		table[table.size() - 1].push_back("Тарелка " + to_string(plate));
 
 	}
 	else
 	{
-		table[table.size() - 1].push_back("Tarelka " + to_string(plate));
+		table[table.size() - 1].push_back("Тарелка " + to_string(plate));
 	}
 	size++;
 	plate++;
@@ -57,7 +57,7 @@ void SetOfStack::Push() {
 void SetOfStack::Show() {
 	int tmp = 0;
 	for (int i = 0; i < stack; i++) {
-		cout << "\n__________________________\n" << "\nStack " + to_string(i + 1) << endl;
+		cout << "\n__________________________\n" << "\nСтопка " + to_string(i + 1) << endl;
 		for (int j = 0; j < N; j++)
 		{
 			if (tmp > size - 1)
